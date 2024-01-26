@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.List{
+    display: flex !important;
+    flex-direction: column !important;
+}
