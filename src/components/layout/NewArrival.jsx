@@ -18,9 +18,9 @@ const NewArrival = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "red" }}
+        style={{ ...style, display: "block", background: "" }}
         onClick={onClick}
-      > Hello</div>
+      > Next</div>
     );
   }
 

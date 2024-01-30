@@ -1,11 +1,20 @@
-import React from 'react'
-
-const Breadcumb = ({children}) => {
+import React from "react";
+import { Link, useParams } from "react-router-dom";
+import { FaAngleRight } from "react-icons/fa";
+const Breadcumb = () => {
+  
+  const params = useParams();
+  console.log(window.location.pathname.split("/")[1]);
   return (
-    <div>
-      <p className='font-normal text-sm font-dm text-secondaryGray mt-3 flex gap-x-1 items-center'>{children}</p>
+    <div className="my-28">
+      <h1 className='font-dm font-bold text-5xl text-primary '>{window.location.pathname.split("/")[1]}</h1>
+      <p className="mt-3 flex items-center gap-x-1 font-dm text-sm font-normal text-secondaryGray">
+        {" "}
+        <Link to="/">Home</Link> <FaAngleRight />{" "}
+        {window.location.pathname.split("/")[1]}
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default Breadcumb
+export default Breadcumb;

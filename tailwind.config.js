@@ -19,7 +19,9 @@ export default {
         'white': '#ffffff',
         'gray': '#D8D8D8',
         'secondary': '#6D6D6D',
-        'secondaryGray': '#767676'
+        'secondaryGray': '#767676',
+        'primaryBg': '#F5F5F3',
+        'border': '#f0f0f0'
       },
       
     },

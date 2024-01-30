@@ -71,13 +71,20 @@ let Category = [
 
 let Colors = [
     {
+        name: 'red',
         code: 'red'
     },
     {
+        name: 'green',
         code: 'green'
     },
     {
-        code: 'blue'
+        name: 'blue',
+        code:'blue'
+    },
+    {
+        name: 'yellow',
+        code: 'yellow'
     },
 ]
 
@@ -95,16 +102,16 @@ let Brands = [
 
 let Prices = [
     {
-        range: '$0.00 - $9.99'
+        name: '$0.00 - $9.99'
     },
     {
-        range: '$10.00 - $19.99'
+        name: '$10.00 - $19.99'
     },
     {
-        range: '$20.00 - $29.99'
+        name: '$20.00 - $29.99'
     },
     {
-        range: '$30.00 - $39.99'
+        name: '$30.00 - $39.99'
     },
 ]
 

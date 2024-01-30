@@ -17,6 +17,8 @@ import {
 import RootLayout from "./components/layout/RootLayout";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 
 
@@ -24,72 +26,19 @@ let router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home/>}></Route>
-      <Route path="/shop" element={<Shop/>}></Route>
+      <Route path="/Products" element={<Shop/>}></Route>
+      <Route path="/About" element={<About/>}></Route>
+      <Route path="/Contacts" element={<Contact/>}></Route>
     </Route>
   )
 );
 
 
 function App() {
-  // const [showMenu, setShowMenu] = useState(true);
-  // useEffect(()=>{
-  //   const scrollWidth =()=>{
-  //     // console.log(window.innerWidth);
-  //     if(window.innerWidth < 768){
-  //       // console.log('ami ekhon responsive');
-  //       setShowMenu(false)
-  //     }
-  //     else{
-  //       setShowMenu(true)
-  //     }
-  //   }
-  //   scrollWidth()
-  //   window.addEventListener('resize', scrollWidth)
-  // }, [])
 
   return (
     <>
     <RouterProvider router={router} />
-      {/* <nav>
-        <div className="max-w-container mx-auto bg-red-500 p-2.5">
-          <Flex className="md:flex ">
-            <div className="w-4/12 ">
-              <Image imgsrc={logo} />
-            </div>
-            <div className="md:w-8/12 w-full ">
-              <HiMiniBars3CenterLeft
-              onClick={()=>setShowMenu(!showMenu)}
-                className="block md:hidden ml-auto absolute top-2 right-2 cursor-pointer"
-              />
-              {showMenu &&
-              (
-                <List className="md:flex text-center  mt-5 md:mt-0 font-dm text-sm font-normal gap-x-10">
-                  <ListItems
-                    className="text-black text-sm font-bold hover:font-bold my-1 lg:my-0"
-                    listItems="Hello"
-                  />
-                  <ListItems
-                    className="text-black text-sm font-normal hover:font-bold my-1 lg:my-0"
-                    listItems="Shop"
-                  />
-                  <ListItems
-                    className="text-black text-sm font-normal hover:font-bold my-1 lg:my-0"
-                    listItems="About"
-                  />
-                  <ListItems
-                    className="text-black text-sm font-normal hover:font-bold my-1 lg:my-0"
-                    listItems="Contacts"
-                  />
-                  <ListItems
-                    className="text-black text-sm font-normal hover:font-bold my-1 lg:my-0"
-                    listItems="Journal"
-                  />
-                </List>
-              )}
-            </div>
-          </Flex>
-        </div>
-      </nav> */}
     </>
   );
 }
